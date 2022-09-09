@@ -59,7 +59,7 @@ const ListOrders = () => {
 
         orders.forEach(order => {
             data.rows.push({
-                id: order._id,
+                id: order.orderId,
                 numOfItems: order.orderItems.length,
                 amount: `$${order.totalPrice}`,
                 status: order.orderStatus && String(order.orderStatus).includes('Delivered')
