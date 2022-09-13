@@ -22,18 +22,18 @@ const UpdateProduct = ({ match, history }) => {
     const [imagesPreview, setImagesPreview] = useState([])
 
     const categories = [
-        'Electronics',
-        'Cameras',
-        'Laptops',
-        'Accessories',
-        'Headphones',
-        'Food',
-        "Books",
-        'Clothes/Shoes',
-        'Beauty/Health',
-        'Sports',
-        'Outdoor',
-        'Home'
+        'Coconut small',
+        'Coconut oil',
+        'Bulk products'
+        // 'Accessories',
+        // 'Headphones',
+        // 'Food',
+        // "Books",
+        // 'Clothes/Shoes',
+        // 'Beauty/Health',
+        // 'Sports',
+        // 'Outdoor',
+        // 'Home'
     ]
 
     const alert = useAlert();

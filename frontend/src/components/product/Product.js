@@ -13,13 +13,14 @@ const Product = ({ product, col }) => {
                     <h5 className="card-title">
                         <Link to={`/product/${product._id}`}>{product.name}</Link>
                     </h5>
+                    
+                    <p className="card-text">LKR {product.price}</p>
                     <div className="ratings mt-auto">
                         <div className="rating-outer">
                             <div className="rating-inner" style={{ width: `${(product.ratings / 5) * 100}%` }}></div>
                         </div>
                         <span id="no_of_reviews">({product.numOfReviews} Reviews)</span>
                     </div>
-                    <p className="card-text">LKR{product.price}</p>
                     <Link to={`/product/${product._id}`} id="view_btn" className="btn btn-block">View Details</Link>
                 </div>
             </div>

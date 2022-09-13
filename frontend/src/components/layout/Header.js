@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Route, Link } from 'react-router-dom'
 
 import { useDispatch, useSelector } from 'react-redux'
@@ -8,6 +8,15 @@ import { logout } from '../../actions/userActions'
 import Search from './Search'
 
 import '../../App.css'
+
+// function navbar() {
+//     const [click, setclick] = useState(false)
+//     const handleClick =() => setclick(!click);
+//     // const closeMobileMenu =() => setclick(false)
+
+
+
+
 
 const Header = () => {
     const alert = useAlert();
@@ -20,25 +29,47 @@ const Header = () => {
         dispatch(logout());
         alert.success('Logged out successfully.')
     }
+    
+
+    
 
     return (
         <Fragment>
-            <nav className="navbar row">
+            <nav className="navbar">
+                <div className='navbar-container'>
                 <div className="col-12 col-md-3">
                     <div className="navbar-brand">
                         <Link to="/">
-                            <img src="/images/relogo.png" width='100' />
+                            <img src="/images/slogo.png" width='100' />
                         </Link>
                     </div>
+                    {/* <div className='menu-icon' onClick={handleClick}>
+                        <i className={click ? 'fas fa fa-times': 'fas fa-bars'}/>
+                    </div> */}
                 </div>
-
+                </div>
                 <div className="col-12 col-md-6 mt-2 mt-md-0">
-                    <Route render={({ history }) => <Search history={history} />} />
+                    <div className="d-flex align-items-center">
+                        <Link to="/"><i className='fa fa-home text-white mx-2'></i></Link>
+                        <div className="flex-grow-1">
+                            <Route render={({ history }) => <Search history={history} />} />
+                        </div>
+                    </div>
                 </div>
-
+            
                 <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
                     <Link to="/cart" style={{ textDecoration: 'none' }} >
-                        <span id="cart" className="ml-3">Cart</span>
+                        {/* <span id="cart" className="ml-3">Cart</span> */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="30"
+                            fill="white"
+                            className="bi bi-minecart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M4 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM.115 3.18A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 14 12H2a.5.5 0 0 1-.491-.408l-1.5-8a.5.5 0 0 1 .106-.411zm.987.82 1.313 7h11.17l1.313-7H1.102z" />
+                          </svg>
                         <span className="ml-1" id="cart_count">{cartItems.length}</span>
                     </Link>
 
@@ -72,7 +103,7 @@ const Header = () => {
 
                         </div>
 
-                    ) : !loading && <Link to="/login" className="btn ml-4" id="login_btn">Login</Link>}
+                    ) : !loading && <Link to="/login" className="btn ml-4" id="login_btn">LOGIN</Link>}
 
 
                 </div>
@@ -80,5 +111,5 @@ const Header = () => {
         </Fragment>
     )
 }
-
+// }
 export default Header

@@ -34,7 +34,7 @@ const Dashboard = () => {
 
     return (
         <Fragment>
-            <div className="row">
+            <div style={{backgroundColor:'white'}}  className="row">
                 <div className="col-12 col-md-2">
                     <Sidebar />
                 </div>
@@ -59,11 +59,11 @@ const Dashboard = () => {
 
                             <div className="row pr-4">
                                 <div className="col-xl-3 col-sm-6 mb-3">
-                                    <div className="card text-white bg-success o-hidden h-100">
-                                        <div className="card-body">
+                                    <div className="card text-white  o-hidden h-100">
+                                        <div className="card-body1">
                                             <div className="text-center card-font-size">Products<br /> <b>{products && products.length}</b></div>
                                         </div>
-                                        <Link className="card-footer text-white clearfix small z-1" to="/admin/products">
+                                        <Link className="card-footer card-body1 text-white clearfix small z-1" to="/admin/products">
                                             <span className="float-left">View Details</span>
                                             <span className="float-right">
                                                 <i className="fa fa-angle-right"></i>
@@ -74,11 +74,11 @@ const Dashboard = () => {
 
 
                                 <div className="col-xl-3 col-sm-6 mb-3">
-                                    <div className="card text-white bg-danger o-hidden h-100">
-                                        <div className="card-body">
+                                    <div className="card text-white o-hidden h-100">
+                                        <div className="card-body2">
                                             <div className="text-center card-font-size">Orders<br /> <b>{orders && orders.length}</b></div>
                                         </div>
-                                        <Link className="card-footer text-white clearfix small z-1" to="/admin/orders">
+                                        <Link className="card-footer card-body2 text-white clearfix small z-1" to="/admin/orders">
                                             <span className="float-left">View Details</span>
                                             <span className="float-right">
                                                 <i className="fa fa-angle-right"></i>
@@ -89,11 +89,11 @@ const Dashboard = () => {
 
 
                                 <div className="col-xl-3 col-sm-6 mb-3">
-                                    <div className="card text-white bg-info o-hidden h-100">
-                                        <div className="card-body">
+                                    <div className="card text-white  o-hidden h-100">
+                                        <div className="card-body3">
                                             <div className="text-center card-font-size">Users<br /> <b>{users && users.length}</b></div>
                                         </div>
-                                        <Link className="card-footer text-white clearfix small z-1" to="/admin/users">
+                                        <Link className="card-footer card-body3 text-white clearfix small z-1" to="/admin/users">
                                             <span className="float-left">View Details</span>
                                             <span className="float-right">
                                                 <i className="fa fa-angle-right"></i>
@@ -104,20 +104,30 @@ const Dashboard = () => {
 
 
                                 <div className="col-xl-3 col-sm-6 mb-3">
-                                    <div className="card text-white bg-warning o-hidden h-100">
-                                        <div className="card-body">
-                                            <div className="text-center card-font-size">Out of Stock<br /> <b>{outOfStock}</b></div>
+                                    <div className="card sk text-white  o-hidden h-100">
+                                        <div className="card-body4">
+                                            <div className="text-center  card-font-size">Out of Stock<br /> <b>{outOfStock}</b></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
                         </Fragment>
                     )}
+
+                </div>
+                <footer className="py-1">
+                <p className="text-center mt-1">
+                Shopping Cart - 2019-2020, All Rights Reserved
+                </p>
+                </footer>
+                <div>
 
                 </div>
             </div>
 
         </Fragment >
+        
     )
 }
 

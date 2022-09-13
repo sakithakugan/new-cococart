@@ -87,7 +87,7 @@ const Shipping = ({ history }) => {
                             />
                         </div>
 
-                        <div className="form-group">
+                        {/* <div className="form-group">
                             <label htmlFor="country_field">Country</label>
                             <select
                                 id="country_field"
@@ -104,7 +104,7 @@ const Shipping = ({ history }) => {
                                 ))}
 
                             </select>
-                        </div>
+                        </div> */}
 
                         <button
                             id="shipping_btn"

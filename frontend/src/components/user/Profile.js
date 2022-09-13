@@ -33,8 +33,8 @@ const Profile = () => {
                             <h4>Email Address</h4>
                             <p>{user.email}</p>
 
-                            <h4>Telephone</h4>
-                            <p>{user.telephone}</p>
+                            {/* <h4>Telephone</h4>
+                            <p>{user.telephone}</p> */}
 
                             <h4>Joined On</h4>
                             <p>{String(user.createdAt).substring(0, 10)}</p>

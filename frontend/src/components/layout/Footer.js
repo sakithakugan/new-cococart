@@ -12,7 +12,7 @@ const Footer = () => {
             <footer className="footer-distributed">
         <div className="footer-left">
           <h3>
-            Coco<span>cart</span>
+            <span><img src="/images/slogo.png" width='100' /></span>
           </h3>
 
           <p className="footer-links">
@@ -58,8 +58,9 @@ const Footer = () => {
         <div className="footer-right">
           <p className="footer-company-about">
             <span>About the cococart</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-            euismod convallis velit, eu auctor lacus vehicula sit amet.
+            Cococart. through its website will create a huge market opportunity for 
+            coconut buyers and sellers while using the whole coconut. 
+
           </p>
 
           <div className="footer-icons">

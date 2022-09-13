@@ -6,7 +6,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background-color: #C1C763;
+  background-color: #ECFFBF;
 }
 
 /* Scroll Bar */
@@ -28,7 +28,7 @@ body {
 }
 
 nav {
-  background-color: #24642c;
+  background-color: #9FC088;
   padding: 1rem 1rem;
 }
 
@@ -51,7 +51,7 @@ nav {
 #view_btn {
   background-color: #b89274;
   padding: 0.4rem 1.8rem;
-  font-family: calibri;
+  font-family: Amazon Ember;
 }
 
 #cart {
@@ -72,7 +72,9 @@ nav {
 #products_heading {
   margin-top: 1.8rem;
 }
-
+.sk{
+  background-color: rgb(128, 75, 6) ;
+}
 .card {
   height: 100%;
 }
@@ -86,10 +88,25 @@ nav {
   text-decoration: none;
 }
 
-.card-body {
+.card-body0 {
   padding-left: 0;
+  background-color: #1e490d;
 }
+.card-body1{
+  background-color: rgb(119, 83, 54);
+}
+.card-body2{
+  background-color: rgb(230, 159, 68);
+  border:rgb(230, 159, 68);
+}
+.card-body3{
+  background-color: rgb(119, 95, 63);
 
+}
+.card-body4{
+    background-color: rgb(128, 75, 6);
+
+}
 .card-text {
   font-size: 1.4rem;
 }
@@ -167,6 +184,7 @@ footer {
   background-color: #502909;
   border: none;
   padding: 0.5rem 2rem;
+  font-weight: bold;
 }
 
 #product_seller {
@@ -185,7 +203,7 @@ footer {
 }
 
 .greenColor {
-  color: rgb(159, 224, 159);
+  color: rgb(17, 56, 17);
 }
 
 #product_image {
@@ -230,7 +248,8 @@ footer {
 }
 
 .cart-item a {
-  color: grey;
+  color: rgb(3, 2, 2);
+  
 }
 
 #delete_cart_item {
@@ -307,6 +326,7 @@ footer {
 
 .wrapper form {
   padding: 2.5rem 3rem;
+  background-color: #E0D4AE;
 }
 
 .wrapper form .btn {
@@ -511,11 +531,11 @@ footer {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #232f3e;
+  background: #1e490d;
 }
 #sidebar ul.components {
   padding: 5px 0px;
-  border-bottom: 1px solid #232f3e;
+  border-bottom: 1px solid #1e490d;
 }
 
 #sidebar ul li a {
@@ -526,7 +546,7 @@ footer {
   text-decoration: none;
 }
 #sidebar ul li a:hover {
-  color: #232f3e;
+  color: #1e490d;
   background: #fff;
 }
 
@@ -537,7 +557,7 @@ footer {
 #sidebar ul li.active > a,
 a[aria-expanded='true'] {
   color: #fff;
-  background: #232f3e;
+  background: #1e490d;
 }
 a[data-toggle='collapse'] {
   position: relative;
@@ -553,7 +573,7 @@ a[data-toggle='collapse'] {
 ul ul a {
   font-size: 1rem !important;
   padding-left: 30px !important;
-  background: #232f3e;
+  background: #337918;
 }
 
 ul.CTAs {
@@ -617,3 +637,25 @@ ul.CTAs a {
   font-size: 0.8rem;
   color: grey;
 }
+/* .col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  background-color: brown;
+} */
+.btn-danger {
+  color: #fff;
+  background-color: #424547;
+  border-color: #cac3c3;
+}
+.btn-block+.btn-block {
+  margin-top: 0.5rem;
+  background-color: #424547;
+}
+/* .card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  background: rgb(150, 120, 81);
+} */

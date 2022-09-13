@@ -15,7 +15,7 @@ const Search = ({ history }) => {
     }
 
     return (
-        <form onSubmit={searchHandler} >
+        <form onSubmit={searchHandler}>
             <div className="input-group">
                 <input
                     type="text"
