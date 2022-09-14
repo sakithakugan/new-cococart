@@ -43,14 +43,18 @@ const Header = () => {
                             <img src="/images/slogo.png" width='100' />
                         </Link>
                     </div>
-                    {/* <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa fa-times': 'fas fa-bars'}/>
-                    </div> */}
                 </div>
+                </div>
+                {/* home button */}
+                <div className="col-1 col-md-1 mt-2 mt-md-0">
+                    <div className="align-items-center">
+                        <Link to="/"><i className='fa fa-home text-white fs30 mlm35'></i></Link>
+                      
+                    </div>
                 </div>
                 <div className="col-12 col-md-6 mt-2 mt-md-0">
                     <div className="d-flex align-items-center">
-                        <Link to="/"><i className='fa fa-home text-white mx-2'></i></Link>
+                        {/* <Link to="/"><i className='fa fa-home text-white mx-2'></i></Link> */}
                         <div className="flex-grow-1">
                             <Route render={({ history }) => <Search history={history} />} />
                         </div>
